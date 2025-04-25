@@ -97,6 +97,8 @@ if __name__ == '__main__':
     normalize_satellite_images(zip_path, output_dir=output_dir, global_avg_override=127.5)
 
 
+[hi1.zip](https://github.com/user-attachments/files/19914544/hi1.zip)
+
 ![normalized_image10](https://github.com/user-attachments/assets/e5768bbc-6fc0-4160-b0bb-eec64bb5e055)
 ![normalized_image9](https://github.com/user-attachments/assets/b33ba5a9-ab41-4293-8ffd-429245af3135)
 ![normalized_image8](https://github.com/user-attachments/assets/1950813c-fabd-4546-b6b1-d3fb5dcc378d)
@@ -108,6 +110,4 @@ if __name__ == '__main__':
 ![normalized_image2](https://github.com/user-attachments/assets/390bae10-d8f0-4f7f-9918-549c04ad1eef)
 ![normalized_image1](https://github.com/user-attachments/assets/a84924ea-d3b9-43aa-ad42-5411d07b5c40)
 
-
-[hi1.zip](https://github.com/user-attachments/files/19914544/hi1.zip)
 
