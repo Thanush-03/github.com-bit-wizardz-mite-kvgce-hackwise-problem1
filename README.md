@@ -1,5 +1,8 @@
 # github.com-bit-wizardz-mite-kvgce-hackwise-problem1
+
  Satellite Image Brightness Normalizer 
+
+ 
 import os
 import zipfile
 import numpy as np
