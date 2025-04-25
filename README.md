@@ -2,7 +2,7 @@
 
  Satellite Image Brightness Normalizer 
 
- 
+code: 
 import os
 import zipfile
 import numpy as np
