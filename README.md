@@ -152,6 +152,23 @@ if __name__ == '__main__':
 #Print total runtime
 print(f"Runtime: {end - start} seconds")
 
+
+[hi1.zip](https://github.com/user-attachments/files/19914544/hi1.zip)
+
+![normalized_image10](https://github.com/user-attachments/assets/e5768bbc-6fc0-4160-b0bb-eec64bb5e055)
+![normalized_image9](https://github.com/user-attachments/assets/b33ba5a9-ab41-4293-8ffd-429245af3135)
+![normalized_image8](https://github.com/user-attachments/assets/1950813c-fabd-4546-b6b1-d3fb5dcc378d)
+![normalized_image7](https://github.com/user-attachments/assets/feb92640-0b33-4c47-bc96-8429f00110f3)
+![normalized_image6](https://github.com/user-attachments/assets/3749092b-ea18-41bd-aa62-c709091086e1)
+![normalized_image5](https://github.com/user-attachments/assets/af3ad2ff-93b7-452f-b7ee-0ef6d14263cc)
+![normalized_image4](https://github.com/user-attachments/assets/65d9f453-d602-4c77-ba54-383fdfc66bd3)
+![normalized_image3](https://github.com/user-attachments/assets/4161a6b8-e95f-4657-b66e-68748ca822a6)
+![normalized_image2](https://github.com/user-attachments/assets/390bae10-d8f0-4f7f-9918-549c04ad1eef)
+![normalized_image1](https://github.com/user-attachments/assets/a84924ea-d3b9-43aa-ad42-5411d07b5c40)
+
+
+
+
 # HTML code:
 <!DOCTYPE html>
 <html lang="en">
@@ -424,18 +441,4 @@ print(f"Runtime: {end - start} seconds")
 
 </body>
 </html>
-
-[hi1.zip](https://github.com/user-attachments/files/19914544/hi1.zip)
-
-![normalized_image10](https://github.com/user-attachments/assets/e5768bbc-6fc0-4160-b0bb-eec64bb5e055)
-![normalized_image9](https://github.com/user-attachments/assets/b33ba5a9-ab41-4293-8ffd-429245af3135)
-![normalized_image8](https://github.com/user-attachments/assets/1950813c-fabd-4546-b6b1-d3fb5dcc378d)
-![normalized_image7](https://github.com/user-attachments/assets/feb92640-0b33-4c47-bc96-8429f00110f3)
-![normalized_image6](https://github.com/user-attachments/assets/3749092b-ea18-41bd-aa62-c709091086e1)
-![normalized_image5](https://github.com/user-attachments/assets/af3ad2ff-93b7-452f-b7ee-0ef6d14263cc)
-![normalized_image4](https://github.com/user-attachments/assets/65d9f453-d602-4c77-ba54-383fdfc66bd3)
-![normalized_image3](https://github.com/user-attachments/assets/4161a6b8-e95f-4657-b66e-68748ca822a6)
-![normalized_image2](https://github.com/user-attachments/assets/390bae10-d8f0-4f7f-9918-549c04ad1eef)
-![normalized_image1](https://github.com/user-attachments/assets/a84924ea-d3b9-43aa-ad42-5411d07b5c40)
-
 
