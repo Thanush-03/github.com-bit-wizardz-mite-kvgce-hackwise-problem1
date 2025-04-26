@@ -152,7 +152,278 @@ if __name__ == '__main__':
 #Print total runtime
 print(f"Runtime: {end - start} seconds")
 
-HTML code:
+# HTML code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BIT WIZARDS MITE - Satellite Image Normalisation</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #bad1f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .image-set {
+      background: #f2f4f2;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .image-set:hover {
+      transform: scale(1.02);
+    }
+
+    .image-set img {
+      width: 75%; 
+      border-radius: 6px;
+      object-fit: cover;
+    }
+
+    .caption {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #0f0f0f;
+    }
+
+    .pixel-info {
+      color: #bbb;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .chart-container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Normalisation of Satellite Images</h1>
+  <div class="info">
+    <p>Global Pixel Average Used for Normalisation: <strong>127.5</strong></p>
+  </div>
+
+  <div class="gallery">
+    <!-- Images 1 to 10: Before and After -->
+    <div class="image-set">
+      <img src="original_image1.png" alt="Before 1">
+      <div class="caption">Before Normalisation - Image 1</div>
+      <div class="pixel-info">Original Pixel Avg: 112.3</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image1.png" alt="After 1">
+      <div class="caption">After Normalisation - Image 1</div>
+      <div class="pixel-info">Normalized Pixel Avg: 128.1</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image2.png" alt="Before 2">
+      <div class="caption">Before Normalisation - Image 2</div>
+      <div class="pixel-info">Original Pixel Avg: 130.5</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image2.png" alt="After 2">
+      <div class="caption">After Normalisation - Image 2</div>
+      <div class="pixel-info">Normalized Pixel Avg: 126.9</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image3.png" alt="Before 3">
+      <div class="caption">Before Normalisation - Image 3</div>
+      <div class="pixel-info">Original Pixel Avg: 119.8</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image3.png" alt="After 3">
+      <div class="caption">After Normalisation - Image 3</div>
+      <div class="pixel-info">Normalized Pixel Avg: 127.0</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image4.png" alt="Before 4">
+      <div class="caption">Before Normalisation - Image 4</div>
+      <div class="pixel-info">Original Pixel Avg: 135.1</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image4.png" alt="After 4">
+      <div class="caption">After Normalisation - Image 4</div>
+      <div class="pixel-info">Normalized Pixel Avg: 127.8</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image5.png" alt="Before 5">
+      <div class="caption">Before Normalisation - Image 5</div>
+      <div class="pixel-info">Original Pixel Avg: 124.2</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image5.png" alt="After 5">
+      <div class="caption">After Normalisation - Image 5</div>
+      <div class="pixel-info">Normalized Pixel Avg: 126.4</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image6.png" alt="Before 6">
+      <div class="caption">Before Normalisation - Image 6</div>
+      <div class="pixel-info">Original Pixel Avg: 125.9</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image6.png" alt="After 6">
+      <div class="caption">After Normalisation - Image 6</div>
+      <div class="pixel-info">Normalized Pixel Avg: 127.3</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image7.png" alt="Before 7">
+      <div class="caption">Before Normalisation - Image 7</div>
+      <div class="pixel-info">Original Pixel Avg: 131.0</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image7.png" alt="After 7">
+      <div class="caption">After Normalisation - Image 7</div>
+      <div class="pixel-info">Normalized Pixel Avg: 128.0</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image8.png" alt="Before 8">
+      <div class="caption">Before Normalisation - Image 8</div>
+      <div class="pixel-info">Original Pixel Avg: 122.5</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image8.png" alt="After 8">
+      <div class="caption">After Normalisation - Image 8</div>
+      <div class="pixel-info">Normalized Pixel Avg: 126.7</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image9.png" alt="Before 9">
+      <div class="caption">Before Normalisation - Image 9</div>
+      <div class="pixel-info">Original Pixel Avg: 128.4</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image9.png" alt="After 9">
+      <div class="caption">After Normalisation - Image 9</div>
+      <div class="pixel-info">Normalized Pixel Avg: 127.1</div>
+    </div>
+
+    <div class="image-set">
+      <img src="original_image10.png" alt="Before 10">
+      <div class="caption">Before Normalisation - Image 10</div>
+      <div class="pixel-info">Original Pixel Avg: 126.2</div>
+    </div>
+    <div class="image-set">
+      <img src="normalized_image10.png" alt="After 10">
+      <div class="caption">After Normalisation - Image 10</div>
+      <div class="pixel-info">Normalized Pixel Avg: 127.6</div>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="pixelChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('pixelChart').getContext('2d');
+    const globalAvg = 127.5;
+    const globalAvgPlus1 = 128.5;
+    const globalAvgMinus1 = 126.5;
+    const imageAvgs = [128.1, 126.9, 127.0, 127.8, 126.4, 127.3, 128.0, 126.7, 127.1, 127.6];
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: [
+          "Image 1", "Image 2", "Image 3", "Image 4", "Image 5",
+          "Image 6", "Image 7", "Image 8", "Image 9", "Image 10"
+        ],
+        datasets: [{
+          label: 'Normalized Pixel Avg',
+          data: imageAvgs,
+          backgroundColor: 'rgba(52, 152, 219, 0.2)',
+          borderColor: 'rgba(41, 128, 185, 1)',
+          borderWidth: 2,
+          fill: true,
+          tension: 0.3
+        }, {
+          label: 'Global Pixel Avg',
+          data: Array(10).fill(globalAvg),
+          borderColor: 'rgba(231, 76, 60, 0.7)',
+          borderWidth: 2,
+          fill: false
+        }, {
+          label: 'Global Pixel Avg +1',
+          data: Array(10).fill(globalAvgPlus1),
+          borderColor: 'rgba(46, 204, 113, 0.5)',  // Lighter Green
+          borderWidth: 2,
+          fill: false,
+          pointRadius: 0  // No points on the line
+        }, {
+          label: 'Global Pixel Avg -1',
+          data: Array(10).fill(globalAvgMinus1),
+          borderColor: 'rgba(241, 196, 15, 0.5)',  // Lighter Yellow
+          borderWidth: 2,
+          fill: false,
+          pointRadius: 0  // No points on the line
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Normalized Pixel Averages vs Global Average',
+            font: {
+              size: 18
+            }
+          },
+          legend: {
+            position: 'bottom'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: false,
+            min: 120,
+            max: 135,
+            title: {
+              display: true,
+              text: 'Pixel Value'
+            }
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
 
 [hi1.zip](https://github.com/user-attachments/files/19914544/hi1.zip)
 
