@@ -1,3 +1,4 @@
+
 # github.com-bit-wizardz-mite-kvgce-hackwise-problem1
 
  Satellite Image Brightness Normalizer 
@@ -446,4 +447,9 @@ print(f"Runtime: {end - start} seconds")
 
 </body>
 </html>
+
+
+# ppt
+[kvg hackwiseppt.pptx](https://github.com/user-attachments/files/19920503/kvg.hackwiseppt.pptx)
+
 
