@@ -356,6 +356,11 @@ print(f"Runtime: {end - start} seconds")
       <div class="pixel-info">Original Pixel Avg: 126.2</div>
     </div>
     <div class="image-set">
+
+
+    # PPT:
+    https://1drv.ms/p/c/4361af65fb75a23c/ERXNYcCMQHJHuk74UMkksgUB-h0zlV_ZoILB7Hk4PYrwyg?e=IozYC7
+    
       <img src="normalized_image10.png" alt="After 10">
       <div class="caption">After Normalisation - Image 10</div>
       <div class="pixel-info">Normalized Pixel Avg: 127.6</div>
