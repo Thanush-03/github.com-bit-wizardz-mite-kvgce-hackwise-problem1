@@ -14,10 +14,10 @@ preserving image quality for downstream processing.
 Objective: Read a ZIP file containing 10 grayscale PNGs, normalize their brightness, and output 10 
 normalized PNGs named normalized_image1.png to normalized_image10.png. 
 
-python code: 
+
+# python code: 
 import time  # To track runtime
 start = time.time()
-
 import os  # For file path handling
 import zipfile  # To work with ZIP archives
 import numpy as np  # For numerical operations
@@ -147,10 +147,8 @@ if __name__ == '__main__':
 
     # Run the normalization function with optional average override
     normalize_satellite_images(zip_path, output_dir=output_dir, global_avg_override=127.5)
-
-    # End the timer
+# End the timer
     end = time.time()
-
 # Print total runtime
 print(f"Runtime: {end - start} seconds")
 
