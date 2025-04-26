@@ -25,7 +25,7 @@ from PIL import Image  # For image loading and saving
 import tempfile  # For temporary directory creation
 import shutil  # For file and directory operations
 
-# Function to normalize grayscale satellite images inside a ZIP file
+ #Function to normalize grayscale satellite images inside a ZIP file
 def normalize_satellite_images(
     zip_path: str,  # Path to ZIP file containing images
     output_dir: str = '.',  # Directory to save output images
@@ -147,9 +147,9 @@ if __name__ == '__main__':
 
     # Run the normalization function with optional average override
     normalize_satellite_images(zip_path, output_dir=output_dir, global_avg_override=127.5)
-# End the timer
+ #End the timer
     end = time.time()
-# Print total runtime
+#Print total runtime
 print(f"Runtime: {end - start} seconds")
 
 HTML code:
